@@ -1,6 +1,5 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { OptionsChild } from 'components/molecules/Dropdown';
 import { User } from 'services/types';
 
 interface ExampleState {
@@ -9,7 +8,6 @@ interface ExampleState {
   value: number;
   idSideBar: number;
   heightCalendar: number;
-  language: OptionsChild;
   allUser: User[];
   invitee: User;
   isShowSideBar: boolean;
@@ -25,9 +23,6 @@ const initialState: ExampleState = {
   value: 0,
   idSideBar: 0,
   heightCalendar: 0,
-  language: {
-    id: 3, name: '한국어', acronym: 'KO', IconName: 'Korea'
-  },
   allUser: [],
   invitee: {
     id_user: undefined,
@@ -47,16 +42,13 @@ const initialState: ExampleState = {
   count: 0,
   homePage: ''
 };
-
-export const incrementAsync = createAsyncThunk('exampleReducer/example', async (amount: OptionsChild) => amount);
+// eslint-disable-next-line max-len
+/* export const incrementAsync = createAsyncThunk('exampleReducer/example', async (amount: OptionsChild) => amount); */
 
 export const exampleSlice = createSlice({
   name: 'exampleReducer',
   initialState,
   reducers: {
-    increment($state, action: PayloadAction<OptionsChild>) {
-      $state.language = action.payload;
-    },
     incrementByAmount($state, action: PayloadAction<number>) {
       $state.value = action.payload;
     },
@@ -94,15 +86,14 @@ export const exampleSlice = createSlice({
       $state.homePage = action.payload;
     },
   },
-  extraReducers(builder) {
-    builder.addCase(incrementAsync.fulfilled, ($state, action) => {
-      $state.language = action.payload;
-    });
-  },
+  // extraReducers(builder) {
+  //   builder.addCase(incrementAsync.fulfilled, ($state, action) => {
+  //     $state.language = action.payload;
+  //   });
+  // },
 });
 
 export const {
-  increment,
   incrementByAmount,
   incrementGetAllUser,
   incrementSaveInviteeUser,

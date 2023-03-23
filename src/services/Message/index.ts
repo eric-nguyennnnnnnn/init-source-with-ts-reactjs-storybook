@@ -1,4 +1,3 @@
-import { UpdateMediaTypes } from 'components/templates/ContentMessages';
 import axiosInstance from 'services/common/instance';
 
 const getContactAllUserMessageServices = async (id: number) => {
@@ -16,16 +15,6 @@ export const postMessageTextService = async (id: number, data: any) => {
   return response.data;
 };
 
-export const postMessageFileService = async (id: number, data: UpdateMediaTypes) => {
-  const dataTemp = new FormData();
-  dataTemp.append('files', data.file);
-  dataTemp.append('idUser', data.idUser as unknown as string);
-  dataTemp.append('id_user_send', data.id_user_send as unknown as string);
-  dataTemp.append('id_user_receive', data.id_user_receive as unknown as string);
-
-  const response = await axiosInstance.post(`message/send-media/${id}`, dataTemp);
-  return response.data;
-};
 export const postMessageImageService = async (id: number) => {
   const response = await axiosInstance.post(`message/send-image/${id}`);
   return response.data;

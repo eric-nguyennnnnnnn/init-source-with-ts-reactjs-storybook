@@ -2,10 +2,7 @@ import {
   configureStore, ThunkAction, Action, getDefaultMiddleware
 } from '@reduxjs/toolkit';
 
-import Updatebooking from './UpdateBooking';
-import deparmentReduser from './department';
 import exampleReducer from './example';
-import otherReducer from './infoOtheruser';
 import userReducer from './infouser';
 
 export const store = configureStore({
@@ -13,9 +10,6 @@ export const store = configureStore({
   reducer: {
     example: exampleReducer,
     user: userReducer,
-    update: Updatebooking,
-    deparment: deparmentReduser,
-    otherUser: otherReducer
   },
   middleware: getDefaultMiddleware({
     serializableCheck: false,

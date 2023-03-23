@@ -1,49 +1,14 @@
 {
   "login": {
     "micrro_service": "Dịch vụ",
-    "login": "Đăng nhập",
-    "user_id": "Tên đăng nhập",
-    "password": "Mật khẩu",
-    "guest_login": "Khách",
-    "forget_password": "Quên mật khẩu",
-    "signup": "Đăng ký",
-    "login_required": "Địa chỉ email hoặc mật khẩu chưa chính xác",
-    "change_password": "Đổi mật khẩu",
-    "change_email": "Đổi Email",
-    "new_password": "Mật khẩu mới",
-    "current_password": "Mật khẩu hiện tại ",
-    "confirm_password": "Xác nhận mật khẩu ",
-    "confirm_new_password": "Xác nhận mật khẩu mới",
-    "email_address": "Địa chỉ email",
-    "email": "email",
-    "have_account": "Bạn đã có tài khoản?",
-    "no_account":"Bạn chưa có tài khoản?",
-    "back":"Quay lại",
-    "next":"Tiếp tục",
-    "update_password":"Đặt lại mật khẩu",
-    "code_verify":"Mã xác nhận",
-    "access_err": "Bạn không có quyền truy cập",
-    "phone_number":"Số điện thoại",
-    "calendar":"Đặt lịch",
-    "portal":"Cổng thông tin",
-    "addition":"Thông tin thêm"
+    "login": "Đăng nhập"
     },
   "signup": {
     "register":"Đăng kí"
   },
   "homepage": {
     "home": "Trang chủ",
-    "guest": "Khách",
-    "daily": "Ngày",
-    "weekly": "Tuần",
-    "monthly": "Tháng",
-    "reserved_event": "Sự kiện dành riêng",
-    "reserved": "Đã đặt",
-    "hi":"Chào",
-    "booking":"Đã đặt",
-    "under_development":"Chức năng này đang được phát đội ngũ phát triên. Vui lòng quay lại sau",
-    "dep_list": "Dept list",
-    "name_page":"my calendar"
+    "guest": "Khách"
 
   },
   "popup": {
