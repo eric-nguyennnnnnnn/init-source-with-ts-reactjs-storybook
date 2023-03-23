@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { /* createAsyncThunk */createSlice } from '@reduxjs/toolkit';
 
 import { User } from 'services/types';
 
@@ -14,8 +14,6 @@ const initialState: HomeState = {
   allUser: [],
 };
 
-
-
 // export const getUserAction = createAsyncThunk<
 //   User,
 //   number,
@@ -29,7 +27,6 @@ const initialState: HomeState = {
 //   }
 // });
 
-
 export const userSlice = createSlice({
   name: 'userReducer',
   initialState,
@@ -38,7 +35,7 @@ export const userSlice = createSlice({
   //   builder.addCase(getUserAction.fulfilled, ($state, action) => {
   //     $state.infuser = action.payload;
   //   });
-   
+
   // },
 });
 
