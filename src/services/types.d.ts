@@ -1,7 +1,6 @@
 import { OptionDept } from './Login/types';
 
 import { Option } from 'components/atoms/DropDownCheckbox';
-import { Event } from 'components/templates/CalendarCustom';
 
 export type GetUser = User[];
 
